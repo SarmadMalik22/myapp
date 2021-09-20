@@ -1,0 +1,203 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+body{
+    background-color: black !important;
+    font-family: GOTHAM-BOLD;
+}
+
+body{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background: #141414;
+    /* display: flex; */
+    height: 80px;
+    font-size: 1.2rem;
+    padding-bottom: 27px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.navbar_container{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    margin: 0 auto;
+    padding-left:10px;
+    margin-left: 15px;
+    /* flex-direction: start; */
+}
+
+/* .row2{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+} */
+.main{
+    background: #141414;
+
+}
+
+.main_container{
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.main_content{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+}
+
+.main_content h1{
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Gotham-Bold';
+    margin-top: 10px;
+}
+
+.main_content p{
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Gotham-Light';
+}
+
+
+.footer_container{
+    background-color: #141414;
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Modal Button */
+.button{
+    background: #fff;
+    padding: 1em 2em;
+    color: #333;
+    border: 1;
+}
+
+.button:hover{
+    background: #333;
+}
+
+.modal{
+    display: none;
+    position: absolute;
+    padding-left: 5px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal_content{
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    padding: 10px;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+.modal_header h2{
+    font-family: Gotham-Bold;
+    font-size: 23px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.modal_body p{
+    font-family: Gotham-ligt;
+    font-size: 10px;    
+}
+.closeBtn{
+    color: #ccc;
+    /* float: right; */
+    font-size: 30px;
+    margin-left: 630px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeContact{
+    background-color: #141414;
+    color: #ccc;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s;
+    /* float: right; */
+    margin-left: 570px;
+}
+
+@keyframes modalopen {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+/* Modal Button end */
